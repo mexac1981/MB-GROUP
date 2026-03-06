@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+}
+
+/* NAVBAR */
+
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:black;
+    }
+    
+    .logo{
+    color:red;
+    font-size:22px;
+    font-weight:bold;
+    }
+    
+    .navbar ul{
+    display:flex;
+    list-style:none;
+    }
+    
+    .navbar ul li{
+    margin-left:25px;
+    }
+    
+    .navbar ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    }
+    
+    .navbar ul li a:hover,
+    .active{
+    color:red;
+    }
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+    }
+
+nav h2{
+color:#ff2c2c;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li{
+cursor:pointer;
+font-size:14px;
+}
+
+nav ul li:hover{
+color:#ff2c2c;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 10%;
+}
+
+.hero-text h3{
+color:#ff2c2c;
+margin-bottom:10px;
+}
+
+.hero-text h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+color:#bbb;
+margin-bottom:25px;
+max-width:400px;
+}
+
+.btn{
+background:#ff2c2c;
+border:none;
+padding:12px 25px;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+.hero-img img{
+width:320px;
+border-radius:10px;
+}
+
+/* ABOUT */
+
+.about{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 10%;
+background:#141414;
+}
+
+.about img{
+width:300px;
+border-radius:10px;
+}
+
+.about-text{
+max-width:500px;
+}
+
+.about-text h2{
+margin-bottom:15px;
+}
+
+.about-text p{
+color:#aaa;
+margin-bottom:20px;
+line-height:1.6;
+}
+
+/* SKILLS */
+
+.skills{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-bottom:20px;
+}
+
+.skill{
+background:#1f1f1f;
+padding:8px 15px;
+border-radius:5px;
+font-size:14px;
+}
+
+/* SERVICES */
+
+.services{
+padding:80px 10%;
+}
+
+.services h2{
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1a1a1a;
+padding:30px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+background:#222;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+/* CTA */
+
+.cta{
+background:#141414;
+padding:60px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.cta h2{
+font-size:30px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+color:#777;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+gap:40px;
+}
+
+.about{
+flex-direction:column;
+gap:40px;
+text-align:center;
+}
+
+}
+.footer{
+background:#0b0b0b;
+color:white;
+position:relative;
+padding-top:70px;
+font-family:Arial;
+}
+
+/* gradient line */
+
+.footer-line{
+height:3px;
+width:100%;
+background:linear-gradient(90deg,red,orange,red);
+margin-bottom:40px;
+}
+
+/* grid layout */
+
+.footer-container{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:40px;
+padding:0 10%;
+}
+
+/* logo */
+
+.footer-logo{
+color:red;
+margin-bottom:15px;
+}
+
+/* text */
+
+.footer-box p{
+color:#aaa;
+line-height:1.6;
+}
+
+/* lists */
+
+.footer-box ul{
+list-style:none;
+}
+
+.footer-box ul li{
+margin-bottom:10px;
+}
+
+.footer-box ul li a{
+text-decoration:none;
+color:#aaa;
+transition:0.3s;
+}
+
+.footer-box ul li a:hover{
+color:red;
+padding-left:6px;
+}
+
+/* social icons */
+
+.social-icons a{
+display:inline-block;
+height:42px;
+width:42px;
+line-height:42px;
+text-align:center;
+background:#141414;
+margin-right:10px;
+border-radius:50%;
+color:white;
+transition:0.3s;
+}
+
+.social-icons a:hover{
+background:linear-gradient(45deg,red,orange);
+transform:translateY(-6px);
+}
+
+/* bottom */
+
+.footer-bottom{
+text-align:center;
+padding:20px;
+margin-top:50px;
+border-top:1px solid #222;
+color:#888;
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+
+
+
+</html>
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo">MB</div>
+    
+    <ul>
+    
+    <li><a href="index.html">Home</a></li>
+    
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="service.html" >Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    
+    </ul>
+    
+    </nav
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-text">
+<h3>Hello, My Name Is</h3>
+<h1>Mexac Brand</h1>
+<p>
+A passionate web developer and graphics designer who builds modern digital experiences.
+</p>
+
+<button class="btn" onclick="window.location.href='https://wa.me/255680515787'" >Contact Me</button>
+</div>
+
+<div class="hero-img">
+<img src="file_000000001ed471fdba6afa1f6a16e37d.png">
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about">
+
+<img src="file_000000001ed471fdba6afa1f6a16e37d.png">
+
+<div class="about-text">
+
+<h2>Who Am I</h2>
+
+<p>
+My name is Mexac, and I am passionate about web development and graphics design.
+I love building modern websites with clean user interfaces and creative designs.
+</p>
+
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">UI Design</div>
+<div class="skill">Photoshop</div>
+</div>
+
+<button class="btn">Download CV</button>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="services">
+
+<h2>What Can I Do</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Creative Design</h3>
+<p>Designing modern and attractive graphics.</p>
+</div>
+
+<div class="card">
+<h3>Clean Code</h3>
+<p>Writing optimized and maintainable code.</p>
+</div>
+
+<div class="card">
+<h3>User Interface</h3>
+<p>Creating intuitive UI for better user experience.</p>
+</div>
+
+<div class="card">
+<h3>Fast Support</h3>
+<p>Providing quick support for web projects.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>Lets work together on your next project</h2>
+
+<button class="btn">Contact</button>
+
+</section>
+
+<footer class="footer">
+
+    <div class="footer-line"></div>
+    
+    <div class="footer-container">
+    
+    <div class="footer-box">
+    <h2 class="footer-logo">Mexac</h2>
+    
+    <p>
+    Creative developer & graphic designer focused on building modern,
+    clean and powerful digital experiences for the web.
+    </p>
+    
+    </div>
+    
+    
+    <div class="footer-box">
+    
+    <h3>Quick Links</h3>
+    
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    </ul>
+    
+    </div>
+    
+    
+    <div class="footer-box">
+    
+    <h3>Services</h3>
+    
+    <ul>
+    <li><a href="#">Web Development</a></li>
+    <li><a href="#">Graphics Design</a></li>
+    <li><a href="#">UI/UX Design</a></li>
+    <li><a href="#">Brand Identity</a></li>
+    </ul>
+    
+    </div>
+    
+    
+    <div class="footer-box">
+    
+    <h3>Follow Me</h3>
+    
+    <div class="social-icons">
+    
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    
+    <a href="#"><i class="fab fa-github"></i></a>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+
+</body>
+</html>

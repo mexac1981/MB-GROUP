@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Services</title>
+
+<link rel="stylesheet" href="services.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+    }
+    
+    body{
+    background:#0c0c0c;
+    color:white;
+    }
+    
+    
+    /* NAVBAR */
+    
+    .navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:black;
+    }
+    
+    .logo{
+    color:red;
+    font-size:22px;
+    font-weight:bold;
+    }
+    
+    .navbar ul{
+    display:flex;
+    list-style:none;
+    }
+    
+    .navbar ul li{
+    margin-left:25px;
+    }
+    
+    .navbar ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    }
+    
+    .navbar ul li a:hover,
+    .active{
+    color:red;
+    }
+    
+    
+    
+    /* TITLE */
+    
+    .title{
+    text-align:center;
+    padding:80px 0 40px;
+    }
+    
+    .title h4{
+    color:red;
+    margin-bottom:10px;
+    }
+    
+    .title h1{
+    font-size:40px;
+    }
+    
+    
+    
+    /* SERVICES */
+    
+    .services{
+    padding:40px 10% 80px;
+    }
+    
+    .services-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    }
+    
+    .service-box{
+    background:#1b1b1b;
+    padding:35px;
+    border-radius:8px;
+    text-align:center;
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.4);
+    }
+    
+    .service-box i{
+    font-size:35px;
+    color:red;
+    margin-bottom:15px;
+    }
+    
+    .service-box h3{
+    margin-bottom:10px;
+    }
+    
+    .service-box p{
+    color:#bbb;
+    font-size:14px;
+    }
+    
+    .service-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.6);
+    }
+    
+    
+    
+    /* FOOTER */
+   
+    
+.footer{
+background:#0b0b0b;
+color:white;
+position:relative;
+padding-top:70px;
+font-family:Arial;
+}
+
+/* gradient line */
+
+.footer-line{
+height:3px;
+width:100%;
+background:linear-gradient(90deg,red,orange,red);
+margin-bottom:40px;
+}
+
+/* grid layout */
+
+.footer-container{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:40px;
+padding:0 10%;
+}
+
+/* logo */
+
+.footer-logo{
+color:red;
+margin-bottom:15px;
+}
+
+/* text */
+
+.footer-box p{
+color:#aaa;
+line-height:1.6;
+}
+
+/* lists */
+
+.footer-box ul{
+list-style:none;
+}
+
+.footer-box ul li{
+margin-bottom:10px;
+}
+
+.footer-box ul li a{
+text-decoration:none;
+color:#aaa;
+transition:0.3s;
+}
+
+.footer-box ul li a:hover{
+color:red;
+padding-left:6px;
+}
+
+/* social icons */
+
+.social-icons a{
+display:inline-block;
+height:42px;
+width:42px;
+line-height:42px;
+text-align:center;
+background:#141414;
+margin-right:10px;
+border-radius:50%;
+color:white;
+transition:0.3s;
+}
+
+.social-icons a:hover{
+background:linear-gradient(45deg,red,orange);
+transform:translateY(-6px);
+}
+
+/* bottom */
+
+.footer-bottom{
+text-align:center;
+padding:20px;
+margin-top:50px;
+border-top:1px solid #222;
+color:#888;
+}
+
+/* scroll top button */
+
+#topBtn{
+position:fixed;
+bottom:30px;
+right:30px;
+height:45px;
+width:45px;
+border:none;
+border-radius:50%;
+background:red;
+color:white;
+font-size:18px;
+cursor:pointer;
+display:none;
+transition:0.3s;
+}
+
+#topBtn:hover{
+background:orange;
+transform:scale(1.1);
+}
+    
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">MB</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="services.html" class="active">service</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+
+<!-- PAGE TITLE -->
+
+<section class="title">
+
+<h4>My Services</h4>
+<h1>What Can I Do</h1>
+
+</section>
+
+
+
+<!-- SERVICES -->
+
+<section class="services">
+
+<div class="services-container">
+
+<div class="service-box">
+
+<i class="fas fa-palette"></i>
+<h3>Creative Design</h3>
+<p>Creating modern graphics and visual designs for strong branding.</p>
+
+</div>
+
+
+<div class="service-box">
+
+<i class="fas fa-code"></i>
+<h3>Clean Code</h3>
+<p>Writing professional and optimized code for modern websites.</p>
+
+</div>
+
+
+<div class="service-box">
+
+<i class="fas fa-laptop-code"></i>
+<h3>User Interface</h3>
+<p>Designing beautiful and user friendly interfaces.</p>
+
+</div>
+
+
+<div class="service-box">
+
+<i class="fas fa-lightbulb"></i>
+<h3>Ideas</h3>
+<p>Helping businesses grow through creative digital ideas.</p>
+
+</div>
+
+
+<div class="service-box">
+
+<i class="fas fa-headset"></i>
+<h3>Fast Support</h3>
+<p>Providing quick help and technical support.</p>
+
+</div>
+
+
+<div class="service-box">
+
+<i class="fas fa-bullhorn"></i>
+<h3>Branding</h3>
+<p>Building strong digital brands through design and strategy.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="footer-line"></div>
+    
+    <div class="footer-container">
+    
+    <div class="footer-box">
+    <h2 class="footer-logo">Mexac</h2>
+    
+    <p>
+    Creative developer & graphic designer focused on building modern,
+    clean and powerful digital experiences for the web.
+    </p>
+    
+    </div>
+    
+    
+    <div class="footer-box">
+    
+    <h3>Quick Links</h3>
+    
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    </ul>
+    
+    </div>
+    
+    
+    <div class="footer-box">
+    
+    <h3>Services</h3>
+    
+    <ul>
+    <li><a href="#">Web Development</a></li>
+    <li><a href="#">Graphics Design</a></li>
+    <li><a href="#">UI/UX Design</a></li>
+    <li><a href="#">Brand Identity</a></li>
+    </ul>
+    
+    </div>
+    
+    
+    <div class="footer-box">
+    
+    <h3>Follow Me</h3>
+    
+    <div class="social-icons">
+    
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    
+    <a href="#"><i class="fab fa-github"></i></a>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    
+    <div class="footer-bottom">
+    
+    <p>© 2026 Mexac Brand | All Rights Reserved</p>
+    
+    </div>
+    
+    
+    <button id="topBtn">
+    <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    </footer>
+
+
+</body>
+</html>
